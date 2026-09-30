@@ -1,0 +1,56 @@
+@import "tailwindcss";
+
+:root {
+  --paper: #faf7f1;
+  --ink: #171410;
+  --ink-soft: #55504a;
+  --line: #d9d2c4;
+  --accent: #9c3b25;
+  --accent-soft: #f2e4da;
+}
+
+@theme inline {
+  --color-paper: var(--paper);
+  --color-ink: var(--ink);
+  --color-ink-soft: var(--ink-soft);
+  --color-line: var(--line);
+  --color-accent: var(--accent);
+  --color-accent-soft: var(--accent-soft);
+  --font-serif: var(--font-playfair);
+  --font-sans: var(--font-inter);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+.font-serif-display {
+  font-family: var(--font-playfair), Georgia, serif;
+}
+
+.tracking-wide-caps {
+  letter-spacing: 0.14em;
+}
+
+.leaflet-container {
+  width: 100%;
+  height: 100%;
+  background: #e8e2d4;
+  font-family: var(--font-inter), Arial, Helvetica, sans-serif;
+}
+
+.leaflet-popup-content-wrapper {
+  border-radius: 2px;
+  background: var(--paper);
+  color: var(--ink);
+}
+
+.leaflet-popup-tip {
+  background: var(--paper);
+}
+
+.hok-pin {
+  display: block;
+}
